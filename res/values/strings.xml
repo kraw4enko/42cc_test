@@ -3,6 +3,10 @@
 
     <string name="app_name">42cctest</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="name">Евгений</string>
+    <string name="surname">Кравченко</string>
+    <string name="birth">04.09.1983</string>
+    <string name="bio">родился и живу в Киеве</string>
+    <string name="contacts">Киев, Украина</string>
+    
 </resources>
