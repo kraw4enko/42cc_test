@@ -24,12 +24,13 @@ public class DB{
 	  
 	  private static final String DB_CREATE = 
 			    "create table " + DB_TABLE + "(" +
+			      COLUMN_ID + " integer primary key autoincrement, " +
 			      COLUMN_NAME + " text, " +
 			      COLUMN_SURNAME + " text, " +
 			      COLUMN_BIRTH + " date, " +
 			      COLUMN_BIO + " text, " +
 			      COLUMN_CONTACTS + " text, " +
-			      COLUMN_FOTO + " blob " +
+			      COLUMN_FOTO + " text " +
 			    ");";
 	  
 	  private final Context mCtx;	  	  
@@ -58,7 +59,7 @@ public class DB{
 	  }
 	  
 	  // добавить запись в DB_TABLE
-	  public void addRec(String name, String surname, String birth, String bio, String contacts, byte[] foto) {
+	  public void addRec(String name, String surname, String birth, String bio, String contacts, String foto) {
 	    ContentValues cv = new ContentValues();
 	    cv.put(COLUMN_NAME, name);
 	    cv.put(COLUMN_SURNAME, surname);
